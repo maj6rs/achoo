@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$AHCHOO – Sneezing Baby Panda Coin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #cdeac0; /* sea foam green */
+      --fg: #222222;
+      --accent1: #4a90e2; /* blue */
+      --accent2: #f2994a; /* orange */
+      --accent3: #56ccf2; /* sky blue */
+      --light2: #fcf6f6; /* light pink */
+      --light3: #f6fcf6; /* light mint */
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Fredoka One', cursive;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.4;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: var(--accent1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+    header .logo { font-size: 1.5rem; color: #fff; }
+    nav { display: flex; gap: 1rem; }
+    nav a { text-decoration: none; color: #fff; font-weight: bold; transition: color 0.2s; }
+    nav a:hover { color: var(--bg); }
+
+    .hero {
+      background: 
+        linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+        url('https://source.unsplash.com/1600x900/?bamboo-grove') center/cover no-repeat;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--accent2); }
+    .hero p { font-size: 1.1rem; margin-bottom: 2rem; color: var(--accent3); }
+    .hero img {
+      max-width: 100%; height: auto; width: 300px;
+      display: block; margin: 0 auto 1.5rem;
+      border-radius: 50%; border: 5px solid var(--accent2);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .buttons a {
+      display: inline-block; margin: 0.5rem;
+      padding: 0.8rem 1.5rem; background: var(--accent2);
+      color: #fff; border-radius: 20px; text-decoration: none; font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .buttons a:hover { background: var(--accent3); }
+
+    section {
+      padding: 3rem 1rem; max-width: 800px; margin: auto; text-align: center;
+      background: transparent;
+    }
+    section h2 { font-size: 2rem; margin-bottom: 1rem; color: var(--accent1); }
+
+    /* Gallery styling */
+    #gallery .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin: 1rem auto;
+      max-width: 800px;
+    }
+    #gallery .gallery img {
+      width: 100%; height: auto;
+      border-radius: 1rem;
+      border: 3px solid var(--accent3);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .footer {
+      background: var(--bg); text-align: center; padding: 2rem 1rem;
+      font-size: 0.9rem; color: #555;
+    }
+    .footer em { color: var(--accent2); }
+
+    @media (max-width: 600px) {
+      header { flex-direction: column; gap: 0.5rem; }
+      .hero h1 { font-size: 2rem; }
+      .hero img { width: 80%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">$AHCHOO</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#buy">Buy</a>
+      <a href="#chart">Chart</a>
+      <a href="https://twitter.com/" target="_blank">Twitter</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>The Sneeze That Shook the Internet</h1>
+    <p>One tiny panda sneeze in 2006 united the world online. Now, that moment is on-chain.</p>
+    <img src="https://via.placeholder.com/300x300?text=Sneezing+Panda" alt="Sneezing Baby Panda">
+    <div class="buttons">
+      <a href="https://pump.fun" target="_blank">Buy on Pump.fun</a>
+      <a href="#chart">View Chart</a>
+      <a href="https://twitter.com/" target="_blank">Join us on Twitter</a>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery of Sneezes</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x300?text=Sunglasses+Panda" alt="Panda with sunglasses" />
+      <img src="https://via.placeholder.com/300x300?text=Jetpack+Panda" alt="Panda flying with jetpack" />
+      <img src="https://via.placeholder.com/300x300?text=Party+Panda" alt="Panda with party hat" />
+      <img src="https://via.placeholder.com/300x300?text=Cute+Panda" alt="Cute Panda" />
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About $AHCHOO</h2>
+    <p>Back in 2006, a baby panda’s unexpected sneeze became one of the internet’s first viral videos. $AHCHOO honors that iconic moment, powering a community-driven meme coin without roadmaps or empty promises—just pure, sneeze-fueled momentum.</p>
+  </section>
+
+  <section id="tokenomics" class="tokenomics">
+    <h2>Tokenomics</h2>
+    <p><strong>Ticker:</strong> $AHCHOO<br>
+       <strong>Chain:</strong> Solana<br>
+       <strong>Total Supply:</strong> 1,000,000,000<br>
+       <strong>Taxes:</strong> 0%<br>
+       <strong>LP Burned:</strong> ✅</p>
+  </section>
+
+  <section id="buy">
+    <h2>Buy $AHCHOO</h2>
+    <p>Dive into the sneeze. Secure your coins on <a href="https://pump.fun" target="_blank">Pump.fun</a> now.</p>
+  </section>
+
+  <section id="chart">
+    <h2>Chart</h2>
+    <p>Watch the momentum build—track $AHCHOO in real time on <a href="https://dexscreener.com/solana/$AHCHOO" target="_blank">Dexscreener</a>.</p>
+  </section>
+
+  <footer class="footer">
+    <p><em>Disclaimer:</em> $AHCHOO is pure meme entertainment and not financial advice. Sneezes may vary. © 2025</p>
+  </footer>
+</body>
+</html>
